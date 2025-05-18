@@ -1,0 +1,122 @@
+
+.banner {
+    height: 80vh;
+    color: #fff;
+    margin-bottom: 0;
+    margin-top: 0;
+    object-fit: contain;
+    z-index: 1;
+    position: relative;
+}
+.banner-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    padding: 20% 2%;
+    margin-left: 30px;
+}
+.banner-title {
+padding-bottom: 0.5rem;
+font-weight: 800;
+font-size: 3rem;
+}
+
+.banner-description {
+    width: 40rem;
+    line-height: 1.5;
+    font-size: 1rem;
+    padding: 1rem 0;
+    max-width: 600px;
+    /* height: 80px; */
+}
+.banner_button {
+    color: #fff;
+    outline:none;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 0.2vw;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    background-color: #6c6c6c6c;
+}
+.play {
+    color: #000;
+    background-color: #fff;
+}
+
+
+.banner_button:hover {
+    color: #000;
+    background-color: #c6c6c6;
+    transition: all 0.2s;
+}
+/* 
+.bannre_bottom {
+    height: 30vh;
+    background-image: linear-gradient(
+        260deg, transparent, rgb(37, 37, 37, 0.91),
+        #111,
+    );
+}
+
+.play {
+    color: #000;
+    background-color: #fff;
+  }
+  
+  .banner-button:hover {
+    color: #000;
+    background-color: #c6c6c6;
+    transition: all 0.2s;
+  } */
+  
+  .banner-fadebottom {
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    height: 40vh; 
+    background-image: linear-gradient(
+      180deg,
+      transparent,
+      rgba(37, 37, 37, 0.91)
+    );
+  }
+  .footer-outer-container {
+    padding-top: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .banner-contents {
+      align-items: center;
+      text-align: center;
+    }
+    .banner-title {
+      font-size: 5vw;
+    }
+    .banner-description {
+      font-size: 3vw; /* Adjust font size for smaller screens */
+      width: 90%; /* Adjust width for smaller screens */
+    }
+  
+    .banner-button {
+      font-size: 3vw; /* Adjust font size for buttons */
+      padding: 0.8rem 1.5rem; /* Adjust padding for smaller screens */
+    }
+  }
+   @media (max-width: 480px) {
+    .banner-title {
+      font-size: 6vw; /* Further adjust font size for very small screens */
+    }
+  
+    .banner-description {
+      font-size: 4vw; /* Further adjust font size */
+    }
+    .banner-button {
+      font-size: 4vw;
+    }
+   }

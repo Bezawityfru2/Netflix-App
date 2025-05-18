@@ -11,6 +11,7 @@
 .footer-icons {
     width: 11%;
     display: flex;
+    cursor: pointer;
     justify-content: space-between;
     /* margin-left: px; */
     color: #fff;
