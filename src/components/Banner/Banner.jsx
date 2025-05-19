@@ -4,9 +4,6 @@ import  axios from  '../../api/axios.jsx';
 import "./banner.css";
 
 const Banner = () => {
-    // let truncate = (text, maxLength) => {
-    //     return text?.length > maxLength ? text.slice(0, maxLength) + "..." : text;
-    // };
     const [movie, setMovie] = useState({});
 
     useEffect(() => {
