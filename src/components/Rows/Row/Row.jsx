@@ -37,7 +37,7 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
     };
 
     let opts = {
-        height: "30",
+        height: "390",
         width: "100%",
         playerVars: { autoplay: 1 },
     };
@@ -58,12 +58,12 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
                  />
                ))}
        </div>
-      <div style={{ padding: "30px" }}>
+      <div style={{ padding: "40px" }}>
           {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
               </div>
         </div>
     </>
-  )
-}
+  );
+};
 
-export default Row
+export default Row;
